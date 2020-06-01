@@ -8,8 +8,15 @@ public class LeapYearTest {
 
     @Test
     public void isTheGivenYearALeapYear() {
-        LeapYear leapyear = new LeapYear();
+        LeapYear leapyear = new LeapYear(2013);
 
         assertTrue(leapyear.isLeapYear());
+    }
+
+    @Test
+    public void isTheGivenYearDivisibleBy4() {
+        LeapYear leapyear = new LeapYear(2013);
+
+        assertTrue(leapyear.isDivisibleBy4());
     }
 }
